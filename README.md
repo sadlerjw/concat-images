@@ -3,18 +3,25 @@ Concatenate Images Automator Workflow
 
 An Automator workflow that combines several images into a single file with each image in a row, from largest to smallest. Its original purpose was to put screenshots from iOS simulators of different sizes into one image. This has been super useful to show designers and code reviewers what a UI will look like on all supported devices at once.
 
-Prerequisites
+Installation
 ---
-This workflow uses `imagemagick` to create the image and `terminal-notifier` to communicate that work is complete.
+
+You'll need to make sure you have some prerequisites installed on your computer. This workflow uses [`imagemagick`](https://www.imagemagick.org/script/index.php) to create the image and [`terminal-notifier`](https://github.com/julienXX/terminal-notifier) to communicate that work is complete.
+
+Open up the Terminal app. If you don't have [Homebrew](https://brew.sh), install that first. (If you don't know what that is, you probably don't have it.) Paste this into the terminal and hit enter:
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Once that's done, or if you had Homebrew already, run this in your terminal:
 
 ```bash
 brew install imagemagick
 brew install terminal-notifier
 ```
 
-Installation
----
-Copy `Concatenate Images.workflow` into `~/Library/Services`. That's it!
+Now you can download and extract [the workflow](https://github.com/sadlerjw/concat-images/releases/download/1.0/Concatenate.Images.workflow.zip), and copy `Concatenate Images.workflow` into `~/Library/Services`. That's it!
 
 Usage
 ---
